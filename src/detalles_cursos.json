@@ -1,0 +1,24 @@
+{
+  "Cursos": [
+    {
+      "id": 1,
+      "nombre": "Curso de Programación",
+      "imagen": "programacion.jpg",
+      "duracion": "3 meses",
+      "cargaHoraria": "120 horas",
+      "diasHorarios": "Lunes a Viernes, 18:00 - 21:00",
+      "inicio": "2025-03-01",
+      "lugar": "Aula 101, Edificio A",
+      "sobre": "Este curso te enseña los fundamentos de la programación en JavaScript, HTML y CSS.",
+      "alFinalizar": [
+        "Desarrollar aplicaciones web interactivas.",
+        "Entender la lógica detrás de la programación.",
+        "Usar herramientas modernas de desarrollo."
+      ],
+      "requisitos": [
+        "Tener conocimientos básicos de computación.",
+        "Traer computadora portátil."
+      ]
+    }
+  ]
+}

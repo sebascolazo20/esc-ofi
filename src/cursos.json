@@ -1,0 +1,45 @@
+{
+  "Cursos": [
+    {
+      "id": 1,
+      "nombre": "Curso de Fibra Optica",
+      "imagen": "Tecnologia.jpeg",
+      "categoriaIds": [1],
+      "duracion": "6 semanas",
+      "cargaHoraria": "120 horas",
+      "diasHorarios": "Lunes y Miércoles 18:00 - 21:00",
+      "inicio": "01/03/2025",
+      "lugar": "Sala 3, Escuela de Oficios",
+      "descripcion": "Este curso enseña los fundamentos de la carpintería, incluyendo el uso de herramientas y técnicas básicas.",
+      "logros": [
+        "Certificado de finalización",
+        "Habilidad en la fabricación de muebles básicos"
+      ],
+      "requisitos": [
+        "Sin experiencia previa necesaria",
+        "Ganas de aprender y trabajar con herramientas"
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Curso de Electricidad Básica",
+      "imagen": "Tecnolgoia.jpeg",
+      "categoriaIds": [2],
+      "duracion": "8 semanas",
+      "cargaHoraria": "160 horas",
+      "diasHorarios": "Martes y Jueves 17:00 - 20:00",
+      "inicio": "15/04/2025",
+      "lugar": "Sala 5, Escuela de Oficios",
+      "descripcion": "En este curso se cubren los conceptos básicos de la electricidad, la instalación de circuitos y la seguridad eléctrica.",
+      "logros": [
+        "Certificado de finalización",
+        "Habilidad en instalación eléctrica básica"
+      ],
+      "requisitos": [
+        "Conocimiento básico de matemáticas",
+        "Interés por aprender sobre electricidad"
+      ]
+    }
+  ]
+}
+
