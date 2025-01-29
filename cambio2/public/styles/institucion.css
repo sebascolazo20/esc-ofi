@@ -1,0 +1,208 @@
+body{
+    background-color: #fcfcfc;
+}
+
+.wave-container {
+    position: relative;
+    background: #f3f4f6;
+}
+.wave-extension{
+    height: 120px;
+    width: 100%;
+    background-color: #0076d6;
+}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg); /* Invertir la wave hacia abajo */
+}
+.header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6%;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 6px;
+}
+.content-text{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* Nuestra historia */
+.nuestra-historia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 25px;
+}
+.nuestra-historia h3{
+    font-size: 1.6rem;
+}
+.nuestra-historia-p{
+    display: flex;
+    gap: 20px;
+    color: rgba(0, 0, 0, 0.723)
+}
+
+
+/* mision y vision */
+.mision-vision{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 25px;
+
+}
+.mision-vision .image{
+    width: 60%;
+}
+.mision-vision .image img{
+    width: 95%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.mision-vision .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    line-height: 25px;
+    margin: auto;
+}
+.mision-vision h3{
+    font-size: 1.6rem;
+}
+.mision-vision p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.723)
+}
+
+
+/* galeria */
+.album{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.album h3{
+    font-size: 1.8rem;
+}
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.album .img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    height: 100%;
+}
+
+.album .img.img-big {
+    height: 50%;
+    margin-bottom: 16px;
+}
+
+.album .img-last {
+    margin-bottom: 5px;
+}
+
+.album .img.img-big, .album .img {
+    margin-bottom: 16px;
+}
+
+.album #i9rb, .album #ir6i, .album #ikz3b, .album #ipix, .album #ipzoh, 
+.album #ig5q8, .album #imtzl, .album #i53es {
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .album .img {
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .album .img {
+        max-width: 32.5%;
+        margin: 0;
+    }
+
+    .album .responsive-container-block.bg {
+        flex-direction: column;
+    }
+
+    .album .responsive-container-block.img-cont {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .album .img.img-big {
+        max-width: 49%;
+    }
+}
+
+@media (max-width: 500px) {
+    .album .img {
+        max-width: 94%;
+        margin-bottom: 25px;
+    }
+
+    .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .album .img.img-big {
+        max-width: 94%;
+        margin-bottom: 25px;
+    }
+
+    .album .img.img-last {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width:1600px) {
+    .content-text{
+        width: 70%;
+    }
+}
+@media(max-width:1440px) {
+    .content-text{
+        width: 80%;
+    }
+}
+

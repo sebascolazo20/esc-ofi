@@ -1,0 +1,14 @@
+{
+  "Categorias": [
+    {
+      "id": 1,
+      "nombre": "Oficios Digitales",
+      "imagen": "OficiosDigitales.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Oficios Tradicionales",
+      "imagen": "OficiosTradicionales.png"
+    }
+  ]
+}

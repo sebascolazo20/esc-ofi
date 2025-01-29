@@ -1,0 +1,74 @@
+
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Esto asegura que el contenido ocupa al menos la altura completa de la pantalla */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Estilo del footer */
+.footer {
+  background-color: #464d54;
+  color: #fafafa;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  position: relative;
+  margin-top: auto; /* Esto asegura que el footer se quede en la parte inferior */
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-socials a {
+  font-size: 1.5em;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer-copy {
+  font-size: 0.9em;
+  color: #fafafa;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .footer-links, .footer-socials {
+    flex-direction: column; /* Ponemos los iconos y links uno debajo del otro */
+  }
+
+  .footer-copy {
+    margin-top: 10px;
+  }
+}

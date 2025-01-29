@@ -1,0 +1,18 @@
+@import url('/public/styles/index/convenio.css');
+@import url('/public/styles/index/inscripcion-ad.css');
+@import url('/public/styles/index/hero.css');
+@import url('/public/styles/index/coworking-ad.css');
+
+body{
+    background-color: #f9f9f9; /* Color de fondo suave */    
+}
+@media(max-width:1600px) {
+    .info-section .content, .empresas-section .content, .cursos-section .content{
+        width: 70%;
+    }
+}
+@media(max-width:1440px) {
+    .info-section .content, .empresas-section .content, .cursos-section .content{
+        width: 80%;
+    }
+}

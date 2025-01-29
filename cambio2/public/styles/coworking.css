@@ -1,0 +1,190 @@
+.coworking-container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+}
+.coworking-container .description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.coworking-container .description .h2-container{
+    width: fit-content;
+}
+.coworking-container .description h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: none;
+    outline: none;
+    border: none;
+    position: relative; /* Necesario para posicionar el ::after */
+}
+
+.coworking-container .description h2::after {
+    content: '';
+    height: 13px;
+    width: 100%; /* Se ajustará automáticamente al ancho del texto */
+    background-color: rgba(0, 118, 214, 0.329);
+    display: inline-block; /* Para ajustarse al texto */
+    border-radius: 50px;
+    margin-top: -8px;
+    position: absolute;
+    bottom: -3px; /* Ajusta la posición debajo del texto */
+    left: 0;
+}
+
+.coworking-container .description p{
+    text-indent: 40px;
+    font-size: 1rem;
+}
+
+.coworking-container .chars{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.coworking-container .chars .item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 10px;
+
+}
+.coworking-container .chars .item i{
+    font-size: 2.5rem;
+    color: rgb(0, 118, 214);
+}
+.coworking-container .chars .item h4{
+    font-size: 1.5rem;
+}
+.coworking-container .chars .item p{
+    color: rgba(0, 0, 0, 0.593);
+}
+.coworking-container .reserve{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.coworking-container .reserve button{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: rgb(0, 118, 214);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* galeria */
+.album{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.album h3{
+    font-size: 1.8rem;
+}
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.album .img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    height: 100%;
+}
+
+.album .img.img-big {
+    height: 50%;
+    margin-bottom: 16px;
+}
+
+.album .img-last {
+    margin-bottom: 5px;
+}
+
+.album .img.img-big, .album .img {
+    margin-bottom: 16px;
+}
+
+.album #i9rb, .album #ir6i, .album #ikz3b, .album #ipix, .album #ipzoh, 
+.album #ig5q8, .album #imtzl, .album #i53es {
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .album .img {
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .album .img {
+        max-width: 32.5%;
+        margin: 0;
+    }
+
+    .album .responsive-container-block.bg {
+        flex-direction: column;
+    }
+
+    .album .responsive-container-block.img-cont {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .album .img.img-big {
+        max-width: 49%;
+    }
+}
+
+@media (max-width: 500px) {
+    .album .img {
+        max-width: 94%;
+        margin-bottom: 25px;
+    }
+
+    .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .album .img.img-big {
+        max-width: 94%;
+        margin-bottom: 25px;
+    }
+
+    .album .img.img-last {
+        margin-bottom: 5px;
+    }
+}

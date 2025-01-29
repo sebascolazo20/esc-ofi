@@ -1,0 +1,49 @@
+/* Info seccion */
+.info-section .content{
+    padding: 80px 0;
+    width: 60%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.info-section .logos {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.info-section .logos img{
+    height: 80%;
+    opacity: 0.9;
+}
+.info-section .separacion{
+    width: 80%;
+    margin: 0px auto;
+}
+.info-section .titulo{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.info-section .descripcion{
+    font-size: 1.1rem;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.7rem;
+}
+
+@media(max-width:768px){
+    .info-section .content{
+        margin: auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 60px 0;
+    }
+    .info-section .descripcion{
+        width: 100%;
+    }
+}

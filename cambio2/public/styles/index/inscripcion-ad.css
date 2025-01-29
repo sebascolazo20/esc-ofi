@@ -1,0 +1,105 @@
+
+/* cursos */
+.cursos-section{
+    padding: 40px 0;
+}
+.cursos-section .content{
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: black;
+    text-align: center;
+}
+.cursos-section .texto h4{
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.cursos-section .texto h2{
+    font-weight: 600;
+}
+.cursos-section .cards{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+}
+.cursos-section .cards .card-curso {
+    min-width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+  
+.cursos-section .cards .card-curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.cursos-section .cards .card-curso img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+  
+.cursos-section .cards .card-curso .contenido {
+    padding: 10px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+  
+.cursos-section .cards .card-curso .nombre {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 5%;
+    text-align: center;
+}
+  
+.cursos-section .cards .card-curso .fecha {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+.cursos-section button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #0076d6;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+.cursos-section button a{
+    color: white;
+}    
+@media(max-width: 1640px){
+    .cards{
+        width: 60%;;
+    }
+}
+@media(max-width: 768px){
+    .cursos-section .cards{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .cursos-section .cards .card-curso{
+        width: 45%;
+    }
+}
+@media(max-width: 570px){
+    .cursos-section .cards .card-curso{
+        width: 100%;
+    }
+}
